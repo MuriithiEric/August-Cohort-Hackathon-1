@@ -21,7 +21,7 @@ Detail your professional experience, including job titles, companies, and descri
 Include your educational background.
 
 Submission Guidelines
-Repository Setup: Submit via the GitHub classrooms submission link. Commit Messages: Use clear and descriptive commit messages to document your progress. Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes. Deadline: All submissions must be made by monday 1st July 12pm EAT
+Repository Setup: Submit via the GitHub classrooms submission link. Commit Messages: Use clear and descriptive commit messages to document your progress. Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes. Deadline: All submissions must be made by Monday 22nd July 12pm EAT
 
 Judging Criteria
 Submissions will be judged based on the following criteria:
