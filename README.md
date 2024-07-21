@@ -1,31 +1,38 @@
-## WEB HACKATHON 1
-Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
+# Personal Portfolio Website
 
-## Introduction
-The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients.
+This repository contains the source code for my personal portfolio website, showcasing my professional profile, projects, skills, and experience as a Mechatronic Engineer and Software Developer.
 
-Project Requirements
-Personal Information:
-Include sections for your name, a brief bio, contact information, and links to your social media profiles (e.g., LinkedIn, GitHub).
+## Overview
 
-## Portfolio:
-Showcase your projects with descriptions, images, and links to live demos or repositories.
+The website is built using HTML5, CSS3, and JavaScript, with the following features:
 
-## Skills:
-List your technical and non-technical skills.
+- Responsive design for optimal viewing experience across different devices
+- Interactive header section with particle animation background
+- Navigation menu for easy access to different sections
+- Personal information section with a brief bio, contact details, and social media links
+- Portfolio section showcasing featured projects with descriptions, technologies used, and links to live demos and GitHub repositories
+- Skills section highlighting technical proficiencies
+- Experience and education sections
+- Contact section (content to be added)
 
-## Experience:
-Detail your professional experience, including job titles, companies, and descriptions of your roles.
+## Technologies Used
 
-## Education:
-Include your educational background.
+- HTML5
+- CSS3
+- JavaScript
+- [particles.js](https://github.com/VincentGarreau/particles.js/) for particle animation background
+- [GreenSock Animation Platform](https://greensock.com/gsap/) for animations
+- [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/) for tilt effect on project images
 
-Submission Guidelines
-Repository Setup: Submit via the GitHub classrooms submission link. Commit Messages: Use clear and descriptive commit messages to document your progress. Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes. Deadline: All submissions must be made by Monday 22nd July 12pm EAT
+## Setup
 
-Judging Criteria
-Submissions will be judged based on the following criteria:
+1. Clone the repository: `git clone https://github.com/Kau-Molepo/SHIELD-Hackathon1.git`
+2. Open the `index.html` file in a web browser to view the website locally.
 
-Design: Visual appeal, creativity, and user interface design. Functionality: Responsiveness, performance, and interactivity. Content: Clarity, completeness, and presentation of information. Originality: Unique features, innovative approaches, and personal touches. Code Quality: Cleanliness, organization, and use of best practices.
+## Contributing
 
-Happy hacking and we look forward to seeing your amazing portfolio websites!
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
