@@ -1,19 +1,31 @@
 <!DOCTYPE html>
+<!-- Declare the document type as HTML5 -->
 <html lang="en">
+<!-- Set the language of the document to English -->
 <head>
+    <!-- Character encoding and viewport meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags for SEO and description -->
     <meta name="description" content="Portfolio of Kau Molepo, a Mechatronic Engineer and Software Developer specializing in innovative solutions.">
     <meta name="keywords" content="Kau Molepo, Mechatronic Engineer, Software Developer, Portfolio">
     <meta name="author" content="Kau Molepo">
+    
+    <!-- Page title -->
     <title>Kau Molepo - Portfolio</title>
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Import external JavaScript libraries -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/vanilla-tilt.min.js"></script>
 </head>
 <body>
+    <!-- Navigation menu -->
     <nav>
         <ul>
             <li><a href="#personal-info">Personal Info</a></li>
@@ -25,6 +37,7 @@
         </ul>
     </nav>
 
+    <!-- Header section -->
     <header>
         <div class="header-content">
             <h1>Kau Molepo</h1>
@@ -33,7 +46,9 @@
         <div id="particles-js" class="particles-js"></div>
     </header>
 
+    <!-- Main content container -->
     <div class="container">
+        <!-- Personal information section -->
         <section id="personal-info" class="personal-info fade-in">
             <h2>Personal Information</h2>
             <p><strong>Name:</strong> Kau Molepo</p>
@@ -49,52 +64,53 @@
             </div>
         </section>
 
+        <!-- Portfolio section -->
         <section id="portfolio" class="portfolio fade-in">
             <h2>Portfolio</h2>
 
+            <!-- Project 1 -->
             <div class="project">
                 <h3>STEM Tutor Platform</h3>
                 <p><strong>Description:</strong> A comprehensive tutoring platform offering personalized learning experiences using AI-powered features.</p>
                 <p><strong>Technologies:</strong>
-                    <p>
-                        <ul>
-                            <li>Python (for backend and AI/ML model development)</li>
-                            <li>FastAPI (high-performance web framework for building APIs)</li>
-                            <li>Gemini API (interface for integrating with AI models and services)</li>
-                            <li>Flutter (cross-platform mobile app development framework)</li>
-                        </ul>
+                    <ul>
+                        <li>Python (for backend and AI/ML model development)</li>
+                        <li>FastAPI (high-performance web framework for building APIs)</li>
+                        <li>Gemini API (interface for integrating with AI models and services)</li>
+                        <li>Flutter (cross-platform mobile app development framework)</li>
+                    </ul>
                 </p>
                 <p><strong>Role:</strong> Sole Developer</p>
                 <img src="project1.png" alt="STEM Tutor Platform" class="project-image">
                 <p><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a href="https://github.com/kau-molepo/stemtutor" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
             </div>
 
+            <!-- Project 2 -->
             <div class="project">
                 <h3>eResidence</h3>
                 <p><strong>Description:</strong> A platform that revolutionizes the way institutions manage residence life, empowering students and staff with a streamlined, technology-driven approach to campus living.</p>
                 <p><strong>Technologies:</strong>
-                    <p>
-                        <ul>
-                            <li>Python (for backend and desktop app)</li>
-                            <li>Dart (for mobile apps)</li>
-                            <li>Firebase (for backend, real-time database, authentication)</li>
-                        </ul>
+                    <ul>
+                        <li>Python (for backend and desktop app)</li>
+                        <li>Dart (for mobile apps)</li>
+                        <li>Firebase (for backend, real-time database, authentication)</li>
+                    </ul>
                 </p>
                 <p><strong>Role:</strong> Sole Developer</p>
                 <img src="project2.jpeg" alt="eResidence Platform" class="project-image">
                 <p><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a href="https://github.com/kau-molepo/eresidence" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
             </div>
 
+            <!-- Project 3 -->
             <div class="project">
                 <h3>The Analyst</h3>
                 <p><strong>Description:</strong> Developed a sophisticated Forex market analysis and trading system leveraging a hybrid approach that combines the strengths of Python and MQL5. This system aims to provide traders with data-driven insights and automated trading strategies to navigate the complexities of the Forex market.</p>
                 <p><strong>Technologies:</strong>
-                    <p>
-                        <ul>
-                            <li>Python (for machine learning and data analysis)</li>
-                            <li>MQL5 (for integrating with MetaTrader 5 platform)</li>
-                            <li>MetaTrader 5 (Forex trading platform)</li>
-                        </ul>
+                    <ul>
+                        <li>Python (for machine learning and data analysis)</li>
+                        <li>MQL5 (for integrating with MetaTrader 5 platform)</li>
+                        <li>MetaTrader 5 (Forex trading platform)</li>
+                    </ul>
                 </p>
                 <p><strong>Role:</strong> Sole Developer</p>
                 <img src="project3.png" alt="The Analyst Platform" class="project-image">
@@ -102,6 +118,7 @@
             </div>
         </section>
 
+        <!-- Skills section -->
         <section id="skills" class="section skills-section">
             <h2 class="skills-title">Skills</h2>
             <div class="skills-content">
@@ -146,83 +163,11 @@
                     <ul class="skills-list">
                         <li>Root Cause Analysis</li>
                         <li>VAVE (Value Analysis Value Engineering)</li>
-                        <li>Prototyping, Troubleshooting, countermeasure creation and implementation on Mechanical, Electrical and Mechatronic systems</li>
-                        <li>Troubleshooting Software and Operating System Repair</li>
+                        <li>Prototyping, Troubleshooting and Debugging</li>
                     </ul>
                 </div>
             </div>
         </section>
-
-        <section id="experience" class="experience fade-in">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Graduate Mechanical/Electrical Engineer</h3>
-                <p><strong>Company:</strong> Nissan South Africa</p>
-                <p><strong>Role Description:</strong> Worked on various automotive projects, focusing on the integration of mechanical and electrical systems to improve vehicle performance.</p>
-            </div>
-            <div class="job">
-                <h3>Mobile Robotics Facilitator</h3>
-                <p><strong>Company:</strong> Tshwane University of Technology</p>
-                <p><strong>Role Description:</strong> Developed and facilitated a mobile robotics course, teaching students about robotics principles and practical applications.</p>
-            </div>
-            <div class="job">
-                <h3>Senior Robotics Trainer</h3>
-                <p><strong>Company:</strong> Care For Education</p>
-                <p><strong>Role Description:</strong> Trained and mentored students in robotics, focusing on building and programming robots for various competitions.</p>
-            </div>
-            <div class="job">
-                <h3>Mechatronic Engineer and Android Developer</h3>
-                <p><strong>Company:</strong> K LIQ GRO</p>
-                <p><strong>Role Description:</strong> Designed and developed mechatronic systems, and built Android applications to interface with these systems.</p>
-            </div>
-        </section>
-
-        <section id="education" class="education fade-in">
-            <h2>Education</h2>
-            <div class="degree">
-                <h3>Bachelor of Engineering Technology in Mechatronic Engineering</h3>
-                <p><strong>Institution:</strong> Tshwane University of Technology</p>
-                <p><strong>Year:</strong> 2021</p>
-            </div>
-            <div class="certifications">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Living Online, Certiport (2018)</li>
-                    <li>Computing Fundamentals, Certiport (2018)</li>
-                    <li>Google Africa Developer Training Program: Android Development, Google Developer (2020)</li>
-                    <li>Siemens Mechatronic Systems Certification Program (SMSCP) Assistant (Level 1), Siemens (SITRAIN) (2021)</li>
-                    <li>TIA-MICRO1, Siemens (SITRAIN) (2021)</li>
-                    <li>Software Development (completion pending), Power Learn Project (Expected completion in Sep 2024)</li>
-                </ul>
-            </div>
-        </section>
     </div>
-
-    <section id="contact" class="section contact fade-in">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-</div>
-
-<footer>
-    <p>© 2024 Kau Molepo. All rights reserved.</p>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
-<script src="scripts.js"></script>
 </body>
 </html>
