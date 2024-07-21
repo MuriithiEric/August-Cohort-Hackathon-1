@@ -142,11 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll('section');
 
     function highlightNavItem() {
-        let scrollY = window.pageYOffset;
+        let scrollY = window.scrollY;
 
         sections.forEach(section => {
             const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 50;
+            const sectionTop = section.offsetTop - 100;
             const sectionId = section.getAttribute('id');
 
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
