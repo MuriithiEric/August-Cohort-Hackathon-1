@@ -1,0 +1,265 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #E8EDDF;
+
+}
+/* Navbar Styles */
+.navbar {
+    background-color: #242423; /* Dark background */
+    padding: 0.5em 1em;
+}
+
+.navbar-brand {
+    color: #CFDBD5; /* Light color for brand */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #F5CB5C; /* Accent color on hover */
+}
+
+.navbar-toggler {
+    border-color: #CFDBD5; /* Light color for toggle button */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none' viewBox='0 0 30 30'><path stroke='%23CFDBD5' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/></svg>");
+}
+
+.offcanvas {
+    background-color: #333533; /* Darker background for offcanvas */
+    color: #E8EDDF; /* Light color for text */
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #CFDBD5; /* Light border for header */
+}
+
+.offcanvas-title {
+    color: #F5CB5C; /* Accent color for title */
+}
+
+.btn-close {
+    filter: invert(1); /* Make close button white */
+}
+
+.nav-link {
+    color: #E8EDDF; /* Light color for nav links */
+    font-size: 1.1em;
+}
+
+.nav-link:hover {
+    color: #F5CB5C; /* Accent color on hover */
+}
+
+.nav-item {
+    margin-right: 1em;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 1em;
+    }
+}
+
+/* About Me Section */
+#about-me {
+    background-color: #E8EDDF; /* Light background color */
+    color: #333533; /* Dark text color */
+    padding: 60px 0;
+}
+
+#about-me .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#about-me h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #242423; /* Dark color for the heading */
+}
+
+#about-me .about-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about-me p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #about-me h2 {
+        font-size: 2rem;
+    }
+    
+    #about-me .about-content {
+        font-size: 1rem;
+    }
+}
+
+
+/* Skills Section */
+#skills {
+    background-color: #E8EDDF; /* Light background */
+    color: #242423; /* Dark text color */
+    padding: 2em;
+    border-radius: 8px;
+}
+
+#skills h2 {
+    color: #333533; /* Darker text color */
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#skills h3, #skills h4 {
+    color: #F5CB5C; /* Accent color for subheadings */
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.skill-name {
+    font-size: 1.1em;
+    color: #242423; /* Dark color for skill names */
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #CFDBD5; /* Light color for the skill bar background */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 1.5em;
+    margin-top: 0.5em;
+    width: 65%;
+}
+
+.skill-bar-fill {
+    background-color: #F5CB5C; /* Accent color for skill bar fill */
+    color: #242423; /* Dark color for text inside skill bar */
+    height: 100%;
+    line-height: 1.5em;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Non-Technical Skills */
+.non-technical-skills {
+    margin-top: 2em;
+}
+
+.non-technical-skills h3 {
+    color: #F5CB5C; /* Accent color for heading */
+}
+
+.non-tech-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.non-tech-content li {
+    background-color: #CFDBD5; /* Light background for list items */
+    color: #242423; /* Dark text color for list items */
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.non-tech-content li:hover {
+    background-color: #F5CB5C; /* Accent color on hover */
+    color: #E8EDDF; /* Light text color on hover */
+}
+
+footer {
+    background-color: #242423; /* Dark background */
+    color: #CFDBD5; /* Light color for text */
+    padding: 2em 0;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+footer div {
+    flex: 1;
+    margin: 1em;
+}
+
+footer h5 {
+    color: #F5CB5C; /* Accent color for headings */
+    margin-bottom: 0.5em;
+}
+
+footer p,
+footer a {
+    color: #E8EDDF; /* Lighter text color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .newsletter input[type=email] {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #333533; /* Darker border */
+    border-radius: 5px;
+    background-color: #E8EDDF; /* Lighter background */
+}
+
+footer .newsletter input[type=submit] {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5CB5C; /* Accent color */
+    color: #242423; /* Dark text color */
+    cursor: pointer;
+}
+
+footer .newsletter input[type=submit]:hover {
+    background-color: #CFDBD5; /* Lighter background on hover */
+}
+
+footer .social-icons a {
+    color: #F5CB5C; /* Social icon color */
+    margin-right: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #E8EDDF; /* Light color on hover */
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .social-icons {
+        margin-top: 20px;
+    }
+}
