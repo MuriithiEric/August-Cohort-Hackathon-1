@@ -209,12 +209,14 @@ footer div {
 footer h5 {
     color: #F5CB5C; /* Accent color for headings */
     margin-bottom: 0.5em;
+    text-align: center;
 }
 
 footer p,
 footer a {
     color: #E8EDDF; /* Lighter text color */
     text-decoration: none;
+    text-align: center;
 }
 
 footer a:hover {
@@ -252,6 +254,7 @@ footer .social-icons a {
     margin-right: 1em;
     font-size: 1.5em;
     text-decoration: none;
+    text-align: center;
 }
 
 footer .social-icons a:hover {
