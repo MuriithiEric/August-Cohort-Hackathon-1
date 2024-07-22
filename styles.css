@@ -182,6 +182,10 @@ body {
     color: #E8EDDF; /* Light text color on hover */
 }
 
+.social-icons img{
+    width: 2%;
+}
+
 footer {
     background-color: #242423; /* Dark background */
     color: #CFDBD5; /* Light color for text */
