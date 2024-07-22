@@ -1,0 +1,216 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{ 
+width: 100%;
+background: linear-gradient(to top, rgba(0,0,0,0.7)60%,rgba(0,0,0,0.7)60%), url(img/image\ 2.jpeg);
+background-position: center;
+background-size: cover;
+height: 100vh;
+background-attachment: fixed;
+
+}
+
+
+
+header{
+    color:white;
+    display: flex;
+    justify-content: space-around;
+   margin-bottom: 20px;
+   height: 80px;
+   align-items: center;
+   font-size: 28px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: black;
+   /* padding-top: 90px;*/
+   /* margin-top: 80px;  */
+
+
+
+}
+ul{
+    list-style: none; 
+}
+
+li{
+    display:inline-block;
+}
+li a{
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 10px;
+    color: whitesmoke;
+    border-radius: 4px;
+    
+}
+li a:hover{
+    color: whitesmoke;
+    background-color: orange;
+    font-style: italic;
+
+}
+#centre{
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+
+
+}
+#p1{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 30px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 21px;
+}
+.atag, .links{
+    text-align: center;
+    margin-top: 16px;
+    padding: 5px;
+    
+}
+.atag button{
+    color: whitesmoke;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    background-color: orange;
+}
+.links .fa-solid, .fa-brands{
+    color: orange;
+    margin-left: 10px;
+    font-size: 30px;
+    
+}
+.container1, .container2{
+display: flex;
+margin: auto;
+/* background-color: red; */
+width: 800px;
+
+
+
+
+}
+.container1{
+    margin-top: 50px;
+    
+    
+  
+
+}
+.container2{
+    margin-top: 50px;
+    
+
+
+}
+
+.container1 .about{
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px;
+    border-radius: 4px;
+    text-align: center;
+   font-size: 16px;
+
+}
+.container1 .Experience{
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+
+.container2 .Skills{
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.container2 .Education{
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+
+
+h3{
+    color: orange;
+    margin-bottom: 12px;
+
+}
+.email{
+background-color: black;
+/* width: 450px; */
+height: 200px;
+margin: auto;
+border-radius: 4px;
+justify-content: center;
+align-items: center;
+display:flex;
+flex-direction: column;
+
+
+}
+.email button, input{
+height: 30px;
+padding: 10px;
+
+
+}
+input{
+    width: 400px;
+    display: inline;
+}
+
+button{
+border: none;
+background-color: orange;
+color: whitesmoke;
+display: inline;
+padding: 15px 25px;
+}
+
+.inputs{
+    display: flex;
+    padding-bottom: 20px;
+    
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    color: orange;
+    font-size: 18px;
+   padding-top: 24px;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   left: 0;
+  
+  
+}
