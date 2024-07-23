@@ -6,7 +6,7 @@
 
 /* Container styling */
 .about .container {
-    max-width: 1100px; /* Maximum width of the container */
+    max-width: 1700px; /* Maximum width of the container */
     margin: 0 auto;
     background-color: var(--surface-color);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@
  
  /* Left column styling */
  .left-column {
-    flex: 1.5; 
+    flex: 2; 
     min-width: 250px;
     display: flex;
     flex-direction: column;
@@ -31,8 +31,10 @@
  
  /* Right column styling */
  .right-column {
-    flex: 2; 
+    flex: 1.5; 
     min-width: 250px; 
+    display: flex;
+    flex-direction: column;
  }
  
  /* Profile info container flexbox */
@@ -45,77 +47,81 @@
  /* Profile image styling */
  .profile-img {
     margin-top: 13px;
-    width: 200px;
-    height: 180px;
+    width: 160px;
+    height: 140px;
     border-radius: 0;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover;
  }
  
+ /* Skills content styling */
+.skills-content {
+  margin-top: 20px;
+}
+
+/* Skills title styling */
+.about .skills-content h5 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+  text-align: left;
+}
+
+/* Progress bar container styling */
+.about .progress {
+  height: 30px; 
+  display: block;
+  background: none;
+  border-radius: 5px; 
+  margin-top: 15px;
+}
+
+/* Skill name styling */
+.about .progress .skill {
+  color: black;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 3px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Skill value styling */
+.about .progress .skill .val {
+  float: right;
+}
+
+/* Progress bar wrapper styling */
+.about .progress-bar-wrap {
+  background: rgba(0, 0, 0, 0.1); 
+  height: 15px;
+  border-radius: 5px; 
+  overflow: hidden; /* Ensure the progress bar stays within bounds */
+}
+
+/* Progress bar styling */
+.about .progress-bar {
+  height: 100%;
+  transition: width 0.9s;
+  background-color: #007bff; 
+}
+
  /* Personal info styling */
  .personal-info {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the details vertically */
-    gap: 2px; /* Space between lines of personal info */
+    gap: 3px; /* Space between lines of personal info */
  }
  
- /* Skills content styling */
- .skills-content {
-    margin-top: 20px;
- }
- 
- /* Skills title styling */
- .about .skills-content h5 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 30px 0 15px 0;
- }
- 
- /* Progress bar container styling */
- .about .progress {
-    height: 30px; 
-    display: block;
-    background: none;
-    border-radius: 5px; 
-    margin-top: 15px;
- }
- 
- /* Skill name styling */
- .about .progress .skill {
-    color: var(--default-color);
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: var(--heading-font);
- }
- 
- /* Skill value styling */
- .about .progress .skill .val {
-    float: right;
-    font-style: normal;
- }
- 
- /* Progress bar wrapper styling */
- .about .progress-bar-wrap {
-    background: rgba(0, 0, 0, 0.1); 
-    height: 10px;
-    border-radius: 5px; 
-    overflow: hidden; /* Ensure the progress bar stays within bounds */
- }
- 
- /* Progress bar styling */
- .about .progress-bar {
-    height: 100%;
-    transition: width 0.9s;
-    background-color: #007bff; 
- }
- 
+
  /* About Me section title styling */
  .about .about-me h4 {
-    margin-top: 0px;
+  color: #000000;
+    margin-top: 5px;
     font-size: 25px;
     position:relative;
     margin-bottom: 20px;
@@ -328,17 +334,21 @@ form button:hover {
     background: #555;
 }
 
-.footer {
+footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
     width: 100%;
     position: absolute;
-    margin: 0px;
-    left: 0px;
-    right: 0px;
-    
+}
+
+
+.socials {
+  padding: 0 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 
