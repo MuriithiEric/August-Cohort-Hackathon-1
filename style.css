@@ -388,6 +388,65 @@ footer {
     }
   }
   
+  /* Resume Section */
+  .resume .resume-title {
+    color: #0000ff; /* Blue color for titles */
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0000ff; /* Blue accent color for the border */
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000; /* Black color for item titles */
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    color: #000000; /* Black color for dates */
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+    color: #000000; /* Black color for list items */
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: -9px;
+    top: 0;
+    background: #ffffff; /* Background color for the circle */
+    border: 2px solid #0000ff; /* Blue border for the circle */
+  }
+  
 
   /* General Styles */
 body {
