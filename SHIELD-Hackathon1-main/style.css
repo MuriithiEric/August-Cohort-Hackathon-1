@@ -1,0 +1,65 @@
+body {  
+  font-family: Arial, sans-serif;  
+  margin: 0;  
+  padding: 0;  
+  line-height: 1.6;  
+  background-color: #f4f4f4;  
+}  
+
+header {  
+  background: #35424a;  
+  color: #ffffff;  
+  padding: 20px;  
+  text-align: center;  
+}  
+
+.bio-photo {  
+  width: 150px;  
+  height: auto;  
+  border-radius: 50%;  
+  border: 3px solid #35424a;  
+  margin-top: 10px;  
+}
+
+#bio-paragraph {  
+  font-size: 18px;  
+  color: #f4f4f4;  
+  margin-top: 10px;  
+  line-height: 1.5;  
+  font-family: 'Arial', sans-serif;
+  font-style: italic; 
+  text-align: center; 
+}  
+
+h1, h2, h3 {  
+  margin: 0;  
+}  
+
+h2 {  
+  margin-top: 40px;  
+}  
+
+section {  
+  padding: 20px;  
+  margin: 20px;  
+  background: white;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+.project {  
+  margin-bottom: 20px;  
+}  
+
+.project img {  
+  max-width: 100%;  
+  height: auto;  
+  border: 1px solid #ccc;  
+}  
+
+footer {  
+  text-align: center;  
+  padding: 20px;  
+  background: #35424a;  
+  color: #ffffff;  
+}  
