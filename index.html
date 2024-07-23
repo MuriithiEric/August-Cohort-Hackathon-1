@@ -203,7 +203,26 @@
     </section>
     
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <footer class="footer">
+            <div class="social-icons">
+              <div class="social-icons">
+                <a href="#" class="social-icon" title="X"><img src="x-icon.webp" alt="X"></a>
+                <a href="#" class="social-icon" title="Facebook"><img src="facebook icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon" title="Instagram"><img src="instagram icon.png" alt="Instagram"></a>
+                <a href="#" class="social-icon" title="LinkedIn"><img src="linked in icon.png" alt="LinkedIn"></a>
+              </div>
+            </div>
+            <div class="copyright">
+              &copy; <span id="currentYear"></span> All rights reserved.
+            </div>
+          </footer>
+        
+          <script>
+            // Set current year dynamically
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+          </script>
+       
+        
     </footer>
 </body>
 </html>
