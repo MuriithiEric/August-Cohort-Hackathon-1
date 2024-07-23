@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.Five</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+
+    <header>
+        <div>
+            <a href="#home"><img class="logo" src="./Assets/Atlas Logo.png" alt="Company Logo"></a>
+        </div>
+        <nav>
+            <div class="hamburger"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#About-us">About</a>
+                        <a href="#Expertise">Our Expertise</a>
+                        <a href="#skills">Our Skills</a>
+                        <a href="#education">Education</a>
+                    </div>
+                </li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="contact-button">Contact Us</a>
+    </header>
+
+    <!-- main body -->
+    <main>
+
+        <!-- intro/home section -->
+        <section id="home" class="intro">
+            <div class="intro-content">
+                <h1>Group 5 is a <span class="highlight">Software <br></span>
+                    <span class="highlight">Developer</span> team
+                </h1>
+                <p>Group 5 is a skilled web, Database and software development team, creating innovative digital
+                    solutions. We
+                    excel in
+                    both front-end and back-end technologies, ensuring high-quality, responsive websites and robust
+                    software
+                    applications.</p>
+                <a href="#contact"><button class="contact-button">Get in Touch</button></a>
+            </div>
+            <div class="intro-image">
+                <img src="./Assets/groupPhoto.jpg" alt="Group 5 Team">
+            </div>
+        </section>
+        <!-- about us content -->
+
+        <section id="About-us" class="about-us">
+
+            <div class="row">
+                <div class="about-col">
+                    <h1>#TransformyourDigitalPresence <br> Atlas</h1>
+                    <p>Welcome to Atlas, your trusted partner in innovative technology solutions. Founded by a team of
+                        passionate technologists, we are dedicated to pushing the boundaries of what’s possible,
+                        delivering
+                        high-quality services that drive progress and empower businesses and individuals alike.</p>
+                    <a href="#" class="hero-btn blue-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="./Assets/about-us.jpg">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- expertise section -->
+
+        <section id="Expertise" class="Expertise">
+            <h1>Our Expertise</h1>
+            <p>At Atlas, we are committed to pushing the boundaries of what’s possible, delivering cutting-edge
+                solutions that
+                drive progress and empower businesses and individuals alike. Our mission is to harness the power of
+                technology
+                to create a smarter, more connected world.</p>
+
+            <div class="row">
+                <div class="Expertise-col">
+                    <img src="./Assets/web development.jpg">
+                    <h3>Web Development</h3>
+                    <p>We specialize in creating dynamic, user-centric websites that serve as the cornerstone of your
+                        digital
+                        presence. Our web development services are designed to transform your vision into a powerful,
+                        engaging
+                        online experience that drives results.</p>
+                </div>
+                <div class="Expertise-col">
+                    <img src="./Assets/python.jpg">
+                    <h3>Python Development</h3>
+                    <p>We harness the power of Python to deliver versatile, high-performance solutions tailored to meet
+                        the
+                        unique needs of your business. Python's simplicity, flexibility, and powerful libraries make it
+                        an ideal
+                        choice for a wide range of applications, from web development to data analysis, automation, and
+                        artificial intelligence.</p>
+                </div>
+                <div class="Expertise-col">
+                    <img src="./Assets/dart.jpg">
+                    <h3>App Development </h3>
+                    <p>We leverage the power of Dart and Flutter to create beautiful, high-performance mobile
+                        applications that
+                        offer a seamless user experience across both iOS and Android platforms. Our expertise in Dart
+                        and
+                        Flutter enables us to deliver feature-rich, visually stunning apps that meet the dynamic needs
+                        of
+                        today's mobile users.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- skills section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Our Skills</h2>
+            <div class="skills-container">
+                <div class="technical-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bar" data-skill="Web Development" data-percent="90">
+                        <span class="skill-name">Web Development</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar" data-skill="python" data-percent="85">
+                        <span class="skill-name">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar" data-skill="Database" data-percent="80">
+                        <span class="skill-name">Database</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar" data-skill="App Development" data-percent="75">
+                        <span class="skill-name">App Development</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="non-technical-skills">
+                        <h3>Non-Technical Skills</h3>
+                        <ul>
+                            <li>Team Collaboration</li>
+                            <li>Problem Solving</li>
+                            <li>Communication</li>
+                            <li>Time Management</li>
+                            <li>Project management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-right">
+                    <img class="image-award" src="./Assets/award.jpg">
+                    <h3>Certifications</h3>
+                    <div>
+                        <span>1.</span>
+                        <a href="./Assets/cv.jpg" target="_blank">Curriculum Vitae</a>
+
+                    </div>
+                    <div>
+                        <span>2.</span>
+                        <a href="./Assets/Bachelor of science in information systems.jpg" target="_blank">Bachelor of
+                            science in
+                            information systems</a>
+
+                    </div>
+                    <div>
+                        <span>3.</span>
+                        <a href="./Assets/Linux Certification.jpg" target="_blank">Linux Certification</a>
+
+                    </div>
+                    <div>
+                        <span>4.</span>
+                        <a href="./Assets/Screenshot 2024-07-22 173449.png" target="_blank">JavaScript Certification</a>
+
+                    </div>
+                    <div>
+                        <span>5.</span>
+                        <a href="./Assets/powerlearn.jpg" target="_blank">PLP Certification</a>
+
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Portfolio section -->
+        <section id="portfolio" class="portfolio">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <img src="./Assets/seed-system.png" alt="Seed-website">
+                    <h3>Seed Systems</h3>
+                    <p>A Seed Systems produces and distributes high-quality seeds for agriculture and horticulture..</p>
+                    <a href="https://seedsystemsgroup.org/" class="btn-view-project" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="./Assets/Travel-Website.png" alt="Travel website">
+                    <h3>Travel website</h3>
+                    <p>Our travel site helps users find and book flights, accommodations, and activities worldwide</p>
+                    <a href="https://travelsitesproject.netlify.app/" class="btn-view-project" target="_blank">View
+                        Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="./Assets/WeatherApp.png" alt="Weather App">
+                    <h3>Weather App</h3>
+                    <p>Our weather app provides real-time weather updates and forecasts</p>
+                    <a href="https://dulcet-fairy-9dab11.netlify.app/" class="btn-view-project" target="_blank">View
+                        Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="./Assets/Meditation.png" alt="Meditation site">
+                    <h3>Meditation website</h3>
+                    <p>Our meditation website offers guided sessions and resources to promote relaxation and mindfulness
+                    </p>
+                    <a href="https://johnnytash.github.io/meditation-page/" class="btn-view-project"
+                        target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- testimonials -->
+
+        <section id="testimonials" class="testimonials">
+            <h1>What Past Clients Say</h1>
+            <p>At Atlas, client satisfaction is our top priority. We are proud to have partnered with numerous
+                businesses to
+                deliver innovative, high-quality solutions. Here’s what some of our clients have to say about their
+                experiences
+                working with us:</p>
+
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="./Assets/client1.jpg">
+                    <div>
+                        <p>"Group 5 is a skilled web, database, and software development team creating innovative
+                            digital solutions. We excel in
+                            both front-end and back-end technologies, ensuring high-quality, responsive websites and
+                            robust software applications.
+
+                            Working with Atlas Group 5 has been incredible. They delivered a robust and scalable Python
+                            data processing tool that
+                            exceeded our expectations. Their expertise and customer-centric approach ensured our needs
+                            were a top priority.
+
+                            We highly recommend Group 5 for any Python development needs"
+                        </p>
+                        <h3> — Sarah Thompson, CTO, Data Insights Inc. <h3>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="./Assets/client2.jpg">
+                    <div>
+                        <p>"Group 5 is a skilled web, database, and software development team creating innovative
+                            digital solutions. We excel in
+                            front-end and back-end technologies, delivering high-quality, responsive websites and robust
+                            applications.
+
+                            Group 5 brought our mobile app vision to life with exceptional Dart and Flutter development.
+                            They created a stunning,
+                            user-friendly app for both iOS and Android. Their attention to detail and commitment to
+                            quality were evident throughout
+                            the project.
+
+                            Thanks to Group 5, our app has received outstanding feedback. If you need top-notch app
+                            development, Group 5 is the way
+                            to go.""
+                        </p>
+                        <h3>— Michael Rivera, CEO, Urban Connect<h3>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Education section -->
+        <section id="education" class="education">
+            <h2 class="section-title">Our Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Junior Software Developer Certificate</h3>
+                    <p class="institution">Power Learn project</p>
+                    <p class="year">2024</p>
+                    <p class="description">Focused on software engineering, Web Development, App Development with Dart,
+                        Database with MySQL and Entrepreneurship. Completed a
+                        capstone project on web development, and App development .</p>
+                </div>
+                <div class="education-item">
+                    <h3>Full Stack Web Development Bootcamp</h3>
+                    <p class="institution">Code Academy</p>
+                    <p class="year">2023</p>
+                    <p class="description">Intensive 12-week program covering front-end and back-end technologies
+                        including
+                        HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Master of Science in Artificial Intelligence</h3>
+                    <p class="institution">Tech Institute</p>
+                    <p class="year">2019 - 2023</p>
+                    <p class="description">Currently pursuing advanced studies in AI and machine learning, with a focus
+                        on
+                        natural language processing and computer vision.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action -->
+        <section id="contact" class="cta">
+            <h1>Ready to Transform Your Digital Presence?</h1>
+            <a href="javascript:void(0)" id="contactBtn" class="hero-btn">Contact Us</a>
+        </section>
+
+        <!-- The Modal -->
+        <div id="contactModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="footer">
+            <button id="backToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <div class="column">
+                <div class="section-container">
+                    <h3>Section</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#About-us">About-us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our newsletter</h3>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <input type="email" placeholder="Email address">
+                <button>Subscribe</button>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>© 2024 PLP GROUP 5. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://x.com/PLPAfrica" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/group05plp/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Powerlearnproject" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://www.linkedin.com/in/group5-plp-82188531a" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://chat.whatsapp.com/Jegg1KuWbfXlq1jUj7cDCx" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/group05plp" target="_blank"><i class="fab fa-github"></i></a>
+
+
+
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
