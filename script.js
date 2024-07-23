@@ -37,25 +37,24 @@ document
     modal.style.display = "none";
   });
 
-// Hamburger menu styling
-
-document.addEventListener("DOMContentLoaded", (event) => {
+// Hamburger menu functionality
+document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
-  const dropdowns = document.querySelectorAll(".dropdown");
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
 
-  dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener("click", (e) => {
-      e.preventDefault();
-      dropdown.classList.toggle("active");
-    });
+  // Close the hamburger menu when clicking outside of it
+  document.addEventListener("click", (event) => {
+    if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+      navLinks.classList.remove("active");
+    }
   });
 });
 
+// Back to Top button functionality
 const backToTopButton = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
@@ -108,7 +107,7 @@ const throttle = (func, limit) => {
   };
 };
 
-// Event listeners
+// Event listeners for scroll events
 window.addEventListener(
   "scroll",
   throttle(() => {
@@ -123,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
   lazyLoadImages();
 });
 
-// smooth scrolling
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();

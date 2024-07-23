@@ -98,9 +98,8 @@ main {
 /* hamburger menu styling */
 
 .hamburger {
-  display: none;
-  flex-direction: column;
   cursor: pointer;
+  font-size: 24px;
 }
 
 .hamburger span {
@@ -113,7 +112,17 @@ main {
 
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: flex;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #5e3bee;
+    margin: 5px 0;
+    transition: all 0.3s ease;
   }
 
   .nav-links {
@@ -135,19 +144,14 @@ main {
     margin: 10px 0;
   }
 
-  .dropdown-content {
-    position: static;
-    display: none;
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  .dropdown:hover .dropdown-content {
+  .contact-button {
     display: none;
   }
+}
 
-  .dropdown.active .dropdown-content {
-    display: block;
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
   }
 }
 
@@ -1023,6 +1027,9 @@ h3 {
 
 @media screen and (max-width: 480px) {
   /* Further header adjustments */
+  body {
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+  }
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -1034,7 +1041,11 @@ h3 {
 
   /* Intro section adjustments */
   .intro h1 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+
+  .about-col h1{
+font-size: 20px;
   }
 
   /* Portfolio grid adjustments */
@@ -1068,7 +1079,7 @@ h3 {
   }
 }
 
-/* Add these new styles to your existing CSS file */
+/* Animations for skill */
 
 .animate-text {
   opacity: 0;
@@ -1127,8 +1138,18 @@ h3 {
   transition: width 1s ease;
 }
 
-/* Optimize images */
+/* Optimizes images */
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Lazy Loading Styles */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 1;
 }
