@@ -1,7 +1,22 @@
-* {
+/* Universal box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 10px; /* Adjust padding for small screens */
 }
 body {
   background: linear-gradient(
@@ -26,6 +41,12 @@ header {
   padding: 20px; /* Add padding around the header */
   max-width: 100%; /* Ensure header takes full width */
   justify-content: space-between; /* Distribute space between logo and navigation */
+  position: fixed;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+  z-index: 1000;
+  top: 0; /* Position it at the top */
+  left: 0;
 }
 
 nav ul {
@@ -33,6 +54,7 @@ nav ul {
   list-style: none; /* Remove default list styling */
   gap: 20px; /* Space between menu items */
   margin: 0; /* Remove default margin */
+  padding: 0;
 }
 
 nav a {
@@ -163,6 +185,7 @@ main {
   color: black; /* Text color */
   padding: 50px; /* Padding around the section */
   gap: 50px; /* Space between text and image */
+  margin-top: 100px;
 }
 
 .intro-content {
@@ -176,29 +199,15 @@ main {
 }
 
 .intro h1 {
-  font-family: monospace;
-  overflow: hidden; /* Ensures the text doesn't overflow */
-  border-right: 0.15em solid #5e3bee; /* Adds a cursor effect */
-  white-space: nowrap; /* Ensures the text stays on one line */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1s ease forwards;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
+@keyframes slideIn {
   to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #5e3bee;
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -969,17 +978,34 @@ h3 {
 
 @media screen and (max-width: 768px) {
   /* Header adjustments */
-  header {
+  .header,
+  .nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+ .about-col h1 {
+    font-size: 28px;
   }
 
-  nav ul {
-    margin-top: 20px;
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
   }
 
   .contact-button {
-    margin-top: 20px;
+    display: none;
   }
 
   /* Intro section adjustments */
@@ -1041,12 +1067,20 @@ h3 {
 
   /* Intro section adjustments */
   .intro h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
-  .about-col h1{
-font-size: 20px;
+  .about-col h1 {
+    font-size: 18px;
   }
+  .about-col p{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
 
   /* Portfolio grid adjustments */
   .portfolio-grid {
