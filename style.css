@@ -23,7 +23,7 @@
  
  /* Left column styling */
  .left-column {
-    flex: 2; 
+    flex: 1.8; 
     min-width: 250px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
  
  /* Right column styling */
  .right-column {
-    flex: 1.5; 
+    flex: 2; 
     min-width: 250px; 
     display: flex;
     flex-direction: column;
@@ -42,13 +42,14 @@
     display: flex;
     align-items: flex-start;
     gap: 20px; /* Space between profile picture and personal details */
+    margin-top: 20px;
  }
  
  /* Profile image styling */
  .profile-img {
     margin-top: 13px;
-    width: 160px;
-    height: 140px;
+    width: 120px;
+    height: 160px;
     border-radius: 0;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover;
@@ -56,7 +57,7 @@
  
  /* Skills content styling */
 .skills-content {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 /* Skills title styling */
@@ -231,18 +232,30 @@
     }
  }
 
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
-}
-
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.navbar a {
+  color: #fff;
+  width: 120px;
+  margin: 0 10px;
+  border-radius: 33px;
+  text-align: center;
+  background-color: hsl(0, 0%, 28%);
+}
+
+.logo {
+  max-width: 300px;
 }
 
 nav ul {
@@ -264,11 +277,15 @@ nav ul li a {
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
+    overflow: hidden;
+    position: relative;
+    
 }
 
 .hero-content {
@@ -276,6 +293,7 @@ nav ul li a {
     padding: 2rem;
     border-radius: 10px;
 }
+
 
 .btn {
     display: inline-block;
@@ -335,12 +353,14 @@ form button:hover {
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-    position: absolute;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 
@@ -351,6 +371,9 @@ footer {
   justify-content: center;
 }
 
+.socials span {
+  margin: 0 10px; /* Adjust the spacing between icons */
+}
 
 .services .service-item {
     background-color: var(--surface-color);
@@ -416,6 +439,8 @@ footer {
     border-left: 2px solid #0000ff; /* Blue accent color for the border */
     position: relative;
   }
+
+  
   
   .resume .resume-item h4 {
     line-height: 18px;
@@ -462,11 +487,12 @@ footer {
   
 
   /* General Styles */
-body {
+html, body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    width: 100%;
     color: #333;
   }
   
@@ -527,11 +553,7 @@ body {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
-  
-  body {
-    font-family: Roboto;
-    color: #fff;
-}
+
 
 h1 {
 
@@ -562,10 +584,7 @@ h1:hover span {
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
-.logo {
-    max-width: 300px;
-    margin-left: 20px;
-}
+
 
 
 .name {
@@ -581,20 +600,21 @@ p {
     line-height: 30px;
 }
 
-.btn .contact {
+.btn {
     padding: 18px 30px;
     border-radius: 50px;
     margin: 10px;
+    background-color: #ffffff;
 }
 
-.btn .contact a {
+.btn a {
     text-decoration: none;
     color: hsl(0, 0%, 28%);
     font-weight: 900;
 }
 
 .hero {
-    margin: 35px 0 100px;
+    margin: 0 0 0;
 }
 
 @media (max-width: 768px) {
@@ -623,6 +643,7 @@ p {
     font-size: 10px;
     font-weight: bold;
 }
+
 .heroimg {
     height: max-content
 }
@@ -631,7 +652,8 @@ p {
 
 @media (max-width: 572px){
 .logo {
-    margin: 0 auto;
+    margin-bottom: 0;
+
 }
 .name {
     padding: 80px 0 0;
@@ -642,6 +664,11 @@ p {
 
 .hero {
     margin: 35px 0 70px;
+}
+
+.heroimg {
+    height: 200px;
+    margin-top: 0;
 }
 }
 
