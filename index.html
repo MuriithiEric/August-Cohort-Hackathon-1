@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
-    
 </head>
 <body>
+    
+    <!-- Main section with navigation -->
     <section>
         <h1>MICHELLE JEPKORIR KARAN</h1>
         <p>Web Developer</p>
@@ -24,10 +24,11 @@
         </nav>
     </section>
 
+    <!-- Hero section with an image and introduction -->
     <section id="hero">
         <img src="Michella_img5.jpg" alt="MICHELLE JEPKORIR KARAN">
         <h3>Web Developer</h3>
-        <p> I am the best in what I do. You can contact me for your Web Ddevelopment. 
+        <p>I am the best in what I do. You can contact me for your Web Development.
             My career is built on a solid foundation of practical knowledge in software engineering, product management, databases management, and web development.
             My self-motivation and creativity empower me to find solutions to any problem I encounter. I firmly believe there is always a better way to do anything, and there is always value to be added.
             My unique value proposition is diligent service: give me a task, and consider it perfectly done.</p>
@@ -35,15 +36,16 @@
         <a href="#contact" class="cta-button">Contact Me</a>
     </section>
 
+    <!-- About me section -->
     <section id="about">
         <h2>About Me</h2>
         <p>Michelle is a student with a passion for web development, particularly using HTML, CSS, and JavaScript.
-             <br>She enjoys the creative and problem-solving aspects of coding, which align well with her interest <br>
-             in designing and building websites. Her professional goals include becoming a full-stack web developer,<br>
+             She enjoys the creative and problem-solving aspects of coding, which align well with her interest 
+             in designing and building websites. Her professional goals include becoming a full-stack web developer,
              where she can combine her front-end expertise with back-end development skills to create dynamic and responsive web applications.</p>
-              
     </section>
 
+    <!-- Skills section -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -52,47 +54,44 @@
             <li>React</li>
             <li>Node.js</li>
             <li>Python</li>
+            <li>SQL</li>
         </ul>
     </section>
 
+    <!-- Education section -->
     <section id="education">
         <h2>Education</h2>
-        <p>Degree in Bachelor of Arts at Catolic University of Eastern Africa, expected year of graduation September 2026.</p>
+        <p>Degree in Bachelor of Arts at Catholic University of Eastern Africa, expected year of graduation September 2026.</p>
     </section>
 
+    <!-- Contact section with email, LinkedIn, and GitHub links -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mitchellekaran@gmail.com"></a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mitchelle-karan-0290852a0/" target="_blank"></a></p>
-        <p>GitHub: <a href= "https://github.com/Mitchelle-karan1" target="_blank"></a></p>
-        
-        <div id="project-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-            </div>
-        </div>
-         
+        <p>Email: <a href="mailto:mitchellekaran@gmail.com">mitchellekaran@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mitchelle-karan-0290852a0/" target="_blank">Mitchelle Karan</a></p>
+        <p>GitHub: <a href="https://github.com/Mitchelle-karan1" target="_blank">Mitchelle-karan1</a></p>
     </section>
 
-
-    <section id="contact">
+    <!-- Contact form section -->
+    <section id="contact-form">
         <h2 class="cta-button">Contact Me</h2>
         <form action="submit-form" method="post">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" required placeholder="your name is required, please"><br>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" required placeholder="Enter first name"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" required placeholder="Enter last name"><br>
             <label for="email">Email</label><br>
-            <input type="text" id="name" name="name" required placeholder="your name is email, please"><br>
+            <input type="email" id="email" name="email" required placeholder="Input your email"><br>
             <label for="message">Message</label><br>
-            <textarea id="message" name="message" required placeholder="please type in your message here"></textarea><br>
+            <textarea id="message" name="message" required placeholder="Input your message here"></textarea><br>
             <button type="submit">Send</button>
         </form>
     </section>
-    <br><strong></strong><hr></stong>
-    
 
+    <!-- Footer section -->
     <footer class="row" style="background-color: gray">
-        <p>&copy; 2024 Michelle karan. All rights reserved.</p>
-        <p>&copy; Coded Proudly by Group 59.<p>
+        <p>&copy; 2024 Michelle Karan. All rights reserved.</p>
+        <p>&copy; Coded Proudly by Group 59.</p>
     </footer>
 </body>
 </html>
