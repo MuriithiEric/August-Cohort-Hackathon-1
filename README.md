@@ -20,7 +20,6 @@ Your task is to create a personal portfolio website that highlights your skills,
 1. **Skills**: Use HTML and CSS to build your portfolio. Feel free to use additional technologies if you’re comfortable with them.
 2. **Work Solo**: This is an individual challenge, so showcase your personal skills and creativity.
 3. **Submission**: Your completed portfolio should be pushed to a public GitHub repository.
-4. **ERD Diagram**: Include an Entity-Relationship Diagram (ERD) in the README section of your GitHub repository to demonstrate your data structuring skills.
 
 ## 📁 How to Submit
 
