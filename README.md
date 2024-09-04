@@ -1,4 +1,4 @@
-# Welcome to the Youth-Led Change Hackathon Portfolio Challenge! 🚀
+# Welcome to the August Cohort Portfolio Challenge! 🚀
 
 Hello Hackathon Participants! 🎉
 
