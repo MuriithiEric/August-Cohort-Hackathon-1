@@ -27,7 +27,7 @@ Your task is to create a personal portfolio website that highlights your skills,
 1. **Create Your Portfolio**: Develop your portfolio website and make sure it includes all required sections.
 2. **Push to GitHub**: Ensure your project is pushed to a public GitHub repository.
 3. **Update README**: Fill out your `README.md` file with the necessary information.
-4. **Submit your repo to this form**: Add the ERD diagram to the README or your project’s documentation.
+4. **Submit your repo to this form**: https://forms.gle/KyyHHaya5sWfcRZH6.
 
 ### 💼 Example Sections
 
