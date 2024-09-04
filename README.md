@@ -1,31 +1,50 @@
-## WEB HACKATHON 1
-Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
+# Welcome to the Youth-Led Change Hackathon Portfolio Challenge! 🚀
 
-## Introduction
-The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients.
+Hello Hackathon Participants! 🎉
 
-Project Requirements
-Personal Information:
-Include sections for your name, a brief bio, contact information, and links to your social media profiles (e.g., LinkedIn, GitHub).
+This `README.md` file provides all the details you need to showcase your personal portfolio as part of our hackathon. Follow the instructions below to complete your project and submit it successfully.
 
-## Portfolio:
-Showcase your projects with descriptions, images, and links to live demos or repositories.
+## 🌟 Project Overview
 
-## Skills:
-List your technical and non-technical skills.
+Your task is to create a personal portfolio website that highlights your skills, background, and projects. Make sure your portfolio includes the following sections:
 
-## Experience:
-Detail your professional experience, including job titles, companies, and descriptions of your roles.
+- **Programming Languages**: List the programming languages you are proficient in.
+- **About Section**: Provide a brief introduction about yourself, your passion, and what drives you.
+- **Educational Background**: Include a section where visitors can download your CV.
+- **Interests**: Share your interests and what excites you in the tech world.
+- **Projects**: Link to the projects you’ve worked on with brief descriptions.
+- **Contact Form**: Add a contact form to make it easy for potential collaborators or employers to get in touch with you.
 
-## Education:
-Include your educational background.
+## 🛠️ Guidelines
 
-Submission Guidelines
-Repository Setup: Submit via the GitHub classrooms submission link. Commit Messages: Use clear and descriptive commit messages to document your progress. Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes. Deadline: All submissions must be made by Monday 22nd July 12pm EAT
+1. **Skills**: Use HTML and CSS to build your portfolio. Feel free to use additional technologies if you’re comfortable with them.
+2. **Work Solo**: This is an individual challenge, so showcase your personal skills and creativity.
+3. **Submission**: Your completed portfolio should be pushed to a public GitHub repository.
+4. **ERD Diagram**: Include an Entity-Relationship Diagram (ERD) in the README section of your GitHub repository to demonstrate your data structuring skills.
 
-Judging Criteria
-Submissions will be judged based on the following criteria:
+## 📁 How to Submit
 
-Design: Visual appeal, creativity, and user interface design. Functionality: Responsiveness, performance, and interactivity. Content: Clarity, completeness, and presentation of information. Originality: Unique features, innovative approaches, and personal touches. Code Quality: Cleanliness, organization, and use of best practices.
+1. **Create Your Portfolio**: Develop your portfolio website and make sure it includes all required sections.
+2. **Push to GitHub**: Ensure your project is pushed to a public GitHub repository.
+3. **Update README**: Fill out your `README.md` file with the necessary information.
+4. **Submit your repo to this form**: Add the ERD diagram to the README or your project’s documentation.
 
-Happy hacking and we look forward to seeing your amazing portfolio websites!
+### 💼 Example Sections
+
+```markdown
+## 📝 About Me
+Hi! I'm [Your Name], a passionate web developer...
+
+## 🎓 Educational Background
+I hold a degree in [Your Degree] from [Your University]. [Download My CV](link-to-your-cv)
+
+## 💡 Interests
+- **Web Development**: Exploring the latest trends...
+- **Tech Innovations**: Staying updated with advancements...
+
+## 🛠️ Projects
+- [Project 1](link-to-project1): Brief description...
+- [Project 2](link-to-project2): Brief description...
+
+## 📬 Contact Me
+Feel free to reach out! [Contact Form](link-to-your-contact-form)
