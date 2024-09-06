@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.about .container {
+    max-width: 1700px; /* Maximum width of the container */
+    margin: 0 auto;
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px; 
+ }
+ 
+ /* Flexbox row for layout */
+ .about-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between columns */
+ }
+ 
+ /* Left column styling */
+ .left-column {
+    flex: 1.8; 
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ /* Right column styling */
+ .right-column {
+    flex: 2; 
+    min-width: 250px; 
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ /* Profile info container flexbox */
+ .profile-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between profile picture and personal details */
+    margin-top: 20px;
+ }
+ 
+ /* Profile image styling */
+ .profile-img {
+    margin-top: 13px;
+    width: 120px;
+    height: 160px;
+    border-radius: 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+ }
+ 
+ /* Skills content styling */
+.skills-content {
+  margin-top: 30px;
+}
+
+/* Skills title styling */
+.about .skills-content h5 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+  text-align: left;
+}
+
+/* Progress bar container styling */
+.about .progress {
+  height: 30px; 
+  display: block;
+  background: none;
+  border-radius: 5px; 
+  margin-top: 15px;
+}
+
+/* Skill name styling */
+.about .progress .skill {
+  color: black;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 3px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Skill value styling */
+.about .progress .skill .val {
+  float: right;
+}
+
+/* Progress bar wrapper styling */
+.about .progress-bar-wrap {
+  background: rgba(0, 0, 0, 0.1); 
+  height: 15px;
+  border-radius: 5px; 
+  overflow: hidden; /* Ensure the progress bar stays within bounds */
+}
+
+/* Progress bar styling */
+.about .progress-bar {
+  height: 100%;
+  transition: width 0.9s;
+  background-color: #007bff; 
+}
+
+ /* Personal info styling */
+ .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the details vertically */
+    gap: 3px; /* Space between lines of personal info */
+ }
+ 
+
+ /* About Me section title styling */
+ .about .about-me h4 {
+  color: #000000;
+    margin-top: 5px;
+    font-size: 25px;
+    position:relative;
+    margin-bottom: 20px;
+    font-weight: 700;
+ }
+ 
+ /* About Me section title decoration */
+ .about .about-me h4:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: 2px;
+    background: var(--accent-color);
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+ }
+ 
+ /* About Me section text styling */
+ .about .about-me p {
+    font-size: 18px;
+    line-height: 1.6; 
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 992px) {
+    .about .container {
+       max-width: 700px;
+    }
+ 
+    .about-row {
+        flex-direction: column;
+    }
+    
+    .profile-info {
+        flex-direction: column;
+        align-items: center; /* Center align on smaller screens */
+        font-size: 18px;
+    }
+ 
+    .profile-img {
+        width: 700px; 
+        height: 500px;
+    }
+ 
+    .skills-content {
+        margin-top: 10px;
+    }
+ }
+ 
+ @media (max-width: 768px) {
+    .about .container {
+       max-width: 500px;
+    }
+ 
+    .profile-img {
+       width: 500px; 
+       height: 420px;
+   }
+ 
+    .about .skills-content h5 {
+        font-size: 18px;
+    }
+ 
+    .about .progress {
+        height: 28px; 
+    }
+ 
+    .about .about-me h4 {
+        font-size: 28px;
+    }
+ 
+    .about .about-me p {
+        font-size: 18px;
+    }
+ }
+ 
+ @media (max-width: 576px) {
+    .about .container {
+        padding: 20px;
+    }
+ 
+    .profile-img {
+        width: 425px; 
+        height: 390px;
+    }
+ 
+    .personal-info {
+       display: flex;
+       flex-direction: column;
+       justify-content: center; /* Center the details vertically */
+       gap: 10px; /* Space between lines of personal info */
+    }
+ 
+    .about .skills-content h5 {
+        font-size: 18px;
+    }
+ 
+    .about .about-me h4 {
+        font-size: 22px;
+    }
+ 
+    .about .about-me p {
+        font-size: 18px;
+    }
+ }
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.navbar a {
+  color: #fff;
+  width: 120px;
+  margin: 0 10px;
+  border-radius: 33px;
+  text-align: center;
+  background-color: hsl(0, 0%, 28%);
+}
+
+.logo {
+  max-width: 300px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #e55337;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
+.socials {
+  padding: 0 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials span {
+  margin: 0 10px; /* Adjust the spacing between icons */
+}
+
+/* projects section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  position: relative;
+}
+
+.section-header h2::before {
+  content: "#";
+  color: var(--primary);
+}
+
+.section-header h2::after {
+  content: "";
+  background-color: var(--primary);
+  width: 500px;
+  height: 1px;
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translate(100%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .section-header h2::after {
+    display: none;
+  }
+}
+
+.section-header a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .project-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.project-card,
+.project-card img {
+  border: 1px solid var(--gray);
+}
+
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.project-card img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.project-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--gray);
+  border-bottom: 1px solid var(--gray);
+  margin: 0;
+  padding: 8px;
+}
+
+.project-info {
+  padding: 16px;
+  gap: 16px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-info {
+  font-size: 24px;
+  margin: 0;
+}
+
+.project-info p {
+  margin: 0;
+}
+
+  
+  /* Resume Section */
+  .resume .resume-title {
+    color: #0000ff; /* Blue color for titles */
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0000ff; /* Blue accent color for the border */
+    position: relative;
+  }
+
+  
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000; /* Black color for item titles */
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    color: #000000; /* Black color for dates */
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+    color: #000000; /* Black color for list items */
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: -9px;
+    top: 0;
+    background: #ffffff; /* Background color for the circle */
+    border: 2px solid #0000ff; /* Blue border for the circle */
+  }
+  
+
+  /* General Styles */
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    margin-bottom: 40px;
+  }
+  
+  /* Gallery Styles */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .gallery a {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Hover Effects */
+  .gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+
+h1 {
+
+    line-height: 84px;
+    letter-spacing: 0.1em;
+    color: hsl(0, 0%, 28%);
+    font-size: 72px;
+    font-weight: 900;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+h1 span {
+  transition: 0.5s ease-out;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h1:hover span:nth-child(1):after {
+  content: " ";
+}
+h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+
+
+
+.name {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28.13px;
+}
+p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn {
+    padding: 18px 30px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.btn a {
+    text-decoration: none;
+    color: hsl(0, 0%, 28%);
+    font-weight: 900;
+}
+
+.hero {
+    margin: 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .name {
+    font-size: 18px;
+    font-weight: 350px;
+    padding-top: 70px;
+
+}
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+
+}
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.btn {
+    padding: 12px 14px;
+    border-radius: 50px;
+    margin: 20px 0 30px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.heroimg {
+    height: max-content
+}
+
+}
+
+@media (max-width: 572px){
+.logo {
+    margin-bottom: 0;
+
+}
+.name {
+    padding: 80px 0 0;
+}
+.btn {
+    margin-top: 5px;
+}
+
+.hero {
+    margin: 35px 0 70px;
+}
+
+.heroimg {
+    height: 200px;
+    margin-top: 0;
+}
+}
+
+@media (max-width: 983px){
+   .logo {
+    display: block;
+     margin: 0 auto;
+   }
+}
+
