@@ -47,3 +47,53 @@ I hold a degree in [Your Degree] from [Your University]. [Download My CV](link-t
 
 ## 📬 Contact Me
 Feel free to reach out! [Contact Form](link-to-your-contact-form)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial.scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body {background-color:Red}>
+        <section id="about">
+            <div class="container">
+                <h2> About Me </h2>
+                <p>I'm Muitha Ruth Kagwiria, an IT proffessional with a passion for leveraging technology to drive innovation and solve complex problems especially in wed develovepment.</p>
+          </div>
+        </section>
+        <section id="Education Background">
+            <div class="container">
+                <h2>Education Background</h2>
+                <p>I Hold a certificate in information technology from The Meru National Polytechnic year 2022. Am currently undertaking diploma in information technology at The Meru National Polytechnic.</p>
+            </div>
+        </section>
+        <section id="Interest">
+            <div class="container">
+                <h2>My Interest</h2>
+                <ul type="star">
+                    <li>Web development:Designing web pages</li>
+                    <li>Technology news:Reading technology blogs and books</li>
+                    <li>Networking Events:Attending tech meetups and conference</li>
+                    <li>Problem Solving:Engaging in puzzles and brain teasers</li>
+                     </ul>
+            </div>
+        </section>
+        <section id="Project">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>[My first project](<a href="file:///C:/Users/ruth%20muitha/Desktop/August%202024/week1%20web%20Assignment/Teplate%20assign.html">Click here to view my teplate project</a> </p>
+             </div>
+        </section>
+        <section id="Contact">
+            <div class="container">
+                <h2>Feel free to Contact Me</h2>
+                <p>Contact: +254794040830</p>
+                <p>Email:ruthkagwiria4@gmail.com</p>
+            </div>
+
+        </section>
+    </body>
+    
+</html>
